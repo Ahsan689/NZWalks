@@ -7,11 +7,11 @@ namespace NZWalks.API.Repositories
 
         Task<Walks> CreateAsync(Walks walk);
 
-        Task<List<Walks>> GetAllAsync();
+        Task<List<Walks>> GetAllAsync(string? filterOn = null , string? filterQuery = null);
 
         Task<Walks?> UpdateAsync(Guid id, Walks walk);
 
-        Task<Walks?> GetById(Guid id);
+        Task<Walks?> GetByIdAsync(Guid id);
 
         Task<Walks?> DeleteAsync(Guid id);
     }
