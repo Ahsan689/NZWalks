@@ -10,6 +10,6 @@ namespace NZWalks.API.Model.DTO
         [Required]
         public string FileName { get; set; }
 
-        public string FileDescription { get; set; }
+        public string? FileDescription { get; set; }
     }
 }
